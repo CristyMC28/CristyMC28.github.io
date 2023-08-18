@@ -1,0 +1,623 @@
+
+*{
+	box-sizing:border-box ;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family:"Roboto",sans-serif;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+	color: white;;
+}
+
+h1{
+	font-family:"Libre+Baskerville",sans-serif ;
+	font-size: 2.5em ;
+}
+h2{
+	font-family:"Libre+Baskerville",sans-serif; 
+	font-size: 2.3em;
+}
+h3{
+	font-family:"Libre+Baskerville",sans-serif; 
+	font-size: 2em;
+}
+p{
+	font-family:"Roboto",sans-serif;
+	font-size: 1.25em;
+}
+button{
+	font-family:"Roboto",sans-serif;
+	font-size: 1em;
+	font-weight: bold ;
+	padding:10px 30px ;
+	border-radius:10px ;
+	border: 2px solid rgb(0, 0, 0, 0.5);
+	background-color: rgb(232, 97, 0);
+	box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+	color: white;
+}
+button:hover{
+	background-color: rgb(232, 97, 0, 0.5);
+}
+.container{
+	max-width: 1400px;
+	margin: auto;
+}
+.list{
+	display: inline-block;
+	color: black;
+	padding: 6px;
+	font-weight: bold;
+	transition: .3s ease;
+}
+.list a{
+	color:rgb(232, 97, 0) ;
+	text-decoration: none;
+	margin-left: 6px;
+	transition: .3s ease;
+}
+.list:hover{
+	color: rgb(232, 97, 0) ;
+}
+.color-company-name{
+	color: rgb(232, 97, 0) ;
+}
+header{
+	background-color: rgb(245, 245, 245);
+}
+header .logo{
+	margin: 0;
+	padding: 10px 10px;
+	width: 190px;
+	height: 100px;
+	
+}
+header .container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+header .nav{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding-bottom: 25px;
+}
+header i{
+	margin: 6px;
+}
+header a{
+	padding: 5px 12px;
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+header a:hover{
+	color: rgb(232, 97, 0);
+}
+
+.banner {
+	
+	justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100%; /* Ajusta la altura según tus necesidades */
+}
+
+#bannerImage {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+.hidden {
+    display: none;
+}
+
+#we-are .container{
+	text-align: center;
+	padding: 100px 12px;
+}
+
+#our-services{
+	background-color: rgb(30, 30, 30);
+	color: white;
+	text-align: center;
+    gap: 10px;
+	justify-content: center;
+	
+}
+
+#our-services .container{
+	text-align: center;
+    padding: 100px 12px;
+}
+#our-services h2{
+	margin-top: 0;
+}
+#our-services p{
+	display: none;
+	font-size: 3em;
+}
+#our-services .square{
+	background-size: cover;
+	background-position: center center;
+	padding: 80px 20px;
+	margin: 12px;
+	border-radius: 15px;
+}
+
+.square:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../images/painting.jpg");
+
+}
+
+.square:nth-child(2){
+	background-image: linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0.5),
+		rgba(0, 0, 0, 0.5)
+	)
+	,url("../images/carpentry.JPEG");
+	
+	
+}
+.square:nth-child(3){
+	background-image: linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0.5),
+		rgba(0, 0, 0, 0.5)
+	)
+	,url("../images/floors-walls.JPEG");
+	
+}
+.square:nth-child(4){
+	background-image: linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0.5),
+		rgba(0, 0, 0, 0.5)
+	)
+	,url("../images/construction.JPEG");	
+}
+
+#contact-text .container{
+	text-align: center;
+	padding: 150px 12px;
+	padding-bottom: 10px;
+	
+}
+#contact-text h1{
+	margin-top: 0px;
+	color: #e66000;
+
+}
+.image{
+	display: none;
+}
+
+
+#info .container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#info .info-list{
+	display: block;
+	padding-bottom: 30px;		
+}
+
+#info .map-responsive{
+	overflow:hidden;
+	width: 100%;
+    padding-bottom:56.25%;
+    position: relative;
+	height:0;	
+}
+
+#info iframe{
+		
+	padding-left: 50px;
+    top:0px;
+    height:90%;
+    width:90%;
+	position:absolute;
+		 
+}
+#info i{
+	margin: 6px;
+	color: #ed6100;
+}
+
+#info a{
+	color: black;
+	padding-bottom: 0px;
+}
+#info h2{
+	font-size: 1.5em;
+}
+#info h3{
+	font-size: 1em;
+}
+#info li{
+	font-size: 1.3em
+}
+#media .container{
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+}
+#media{
+	background-color: rgb(230, 230, 230);
+}
+#media img{
+	width: 90px;
+	height: 90px;
+	margin: 20px;	
+}
+#media img:hover{
+	width: 90px;
+	height: 90px;
+	margin: 20px;
+}
+#bottom .bottom-page{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: rgb(0, 0, 0, 1.0);
+	color: white;
+	height: 70vh;
+}
+footer{
+	background-color: rgb(230, 230, 230);
+}
+footer .container{
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+footer p{
+	margin: 0px;
+	color: rgb(100, 100, 100);
+	padding: 12px;
+}
+#bottom h1{
+	color: white;
+	font-size: 3em;
+}
+#bottom button{
+	color: white;
+	font-size: 3.5em;
+}
+
+#gallery{
+	min-height: 100%;
+	margin-top: 2rem;
+	padding-top: 10px;
+	
+}
+#gallery h1{
+	text-align: center;
+	color: #e66000;
+
+}
+.categories  ul{
+	display: flex;
+	list-style: none;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2rem;
+	margin: 1rem 0;
+	font-size: 2em;
+
+}
+.categories ul li{
+	cursor: pointer;
+	
+}
+#gallery .gallery-images{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap:1rem;
+}
+
+.gallery-images .gallery-card{
+	width: 350px;
+	height: 350px;
+	display: block;
+	position: relative;	
+	background-color: rgb(0, 0, 0, 1.0 );
+}
+
+.gallery-card  img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+
+}
+.gallery-card .overlay{
+	background-color: rgba(100, 100, 100, 0.5);
+	backdrop-filter: blur(15px);
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: all .4s ease-in-out;
+}
+.gallery-card .card-info{
+	display: flex;
+	width: 100px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	position: absolute;
+	top: 75%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	opacity: 0;
+	pointer-events: none;
+	transition: .3s ease-in-out;
+}
+.gallery-card .card-info p{
+	color: white;
+	font-size: x-large;
+}
+.gallery-card:hover .card-info{
+	top:50%;
+	opacity: 1;
+	pointer-events: unset;
+}
+.gallery-card:hover .overlay{	
+	opacity: 1;	
+}
+.categories .filter-item.active{
+	border-bottom: 1px solid  #e86100;
+}
+.gallery-card.hide{
+	display: none;
+}
+.gallery-card.show{
+	animation: fadeIn .5s ease;
+}
+@keyframes fadeIn{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+@media (min-width: 850px){	
+	header{
+		position: fixed;
+		width: 100%;
+		top: 0;
+		left: 0;
+		z-index: 1000;	
+		
+	}
+	header .container{
+		flex-direction: row;
+		justify-content: space-between;
+		
+	}
+	header nav{
+		flex-direction: row;
+		padding-bottom: 0;
+		padding-right: 20px;
+	}
+	#bannerImage {
+		width: 100%;
+		height: 70vh;
+		object-fit: cover;
+		transition: transform 0.5s ease-in-out;
+	}
+	h1{
+		font-size: 3.5em;
+	}
+
+	#we-are .container{
+		display: flex;
+		justify-content: space-evenly;	
+
+	}
+	#we-are .img-container{
+		background-image: url("../images/we-are.JPEG");
+		background-size: cover;
+		background-position: center center;
+		height: 500px;
+		width: 400px;
+		border-radius:10px ;	
+	}
+	#we-are .text{
+	width: 70%;
+	max-width: 600px;
+	text-align: initial;
+	flex-direction: column;
+	display: flex;
+	justify-content: center;
+	padding-left: 20px;
+	
+	}
+	#we-are p{
+		font-size: 1em;
+	}
+	#we-are h2{
+		margin: 0px;
+		font-size: 2.7;
+	}
+	#info .map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+	height:0;
+	display: flex;
+	}
+
+	#info iframe{
+    padding-left: 90px;
+    top:0px;
+    height:90%;
+    width:90%;
+	position:absolute;
+	display: flex;
+	justify-content: space-evenly;
+   }
+   
+	#info .info-list{
+		display: none;
+	}
+	#info .image {
+		display: block; 
+		max-width: 100%; 
+		height: auto;
+		padding: 100px;		
+	  }
+	#our-services .container{
+		padding-top: 150px;
+	}
+   #our-services .services{
+   	display: flex;
+   	justify-content: center;
+   }
+   #our-services p{
+   	display: block;
+	margin-bottom: 30px;
+	font-size: 1.2em;
+   }
+   #our-services h3{
+	   margin: 38;
+	   margin-bottom: 75px;
+	   font-size: 1.7em;
+	   
+   }
+   #our-services .square{
+	padding: 10px;
+	background-size: 100% 150px;
+	background-repeat: no-repeat;
+	background-position-y: 0;
+	background-color: rgba(50, 50, 50, 1);
+	box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+   }
+
+   
+.square:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../images/painting-cropted.jpg");
+
+}
+
+.square:nth-child(2){
+	background-image: linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0.5),
+		rgba(0, 0, 0, 0.5)
+	)
+	,url("../images/carpentry-cropted.jpg");
+	
+	
+}
+.square:nth-child(3){
+	background-image: linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0.5),
+		rgba(0, 0, 0, 0.5)
+	)
+	,url("../images/floors-walls-cropted.jpg");
+	
+}
+.square:nth-child(4){
+	background-image: linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0.5),
+		rgba(0, 0, 0, 0.5)
+	)
+	,url("../images/construction-cropted.jpg");	
+}
+footer .container{
+	justify-content: flex-end;
+}
+#bottons-gallery .container{
+	padding-top: 100px;
+}
+#bottons-gallery .categories {
+	display: grid;
+	grid-template-columns: repeat(5, 150px);
+    justify-content: center;	
+}
+
+#gallery{
+	padding-top: 100px;
+}
+
+}
+
+@media (min-width: 1550px) {	
+    #our-services .square{
+		padding: 0px;
+		background-size: 150px;
+		background-repeat: no-repeat;
+		background-position-y: 0;
+		background-color: rgba(50, 50, 50, 1);
+		box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+	}
+	#info .image {
+		display: block; /* Muestra la imagen en pantallas pequeñas */
+		max-width: 100%; /* Ajusta el tamaño de la imagen al ancho de la pantalla */
+		height: auto;
+		padding: 200px;
+	  }
+	#bottons-gallery .container{
+		position: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding: 100px;
+	}
+	
+}
+@media (min-width: 2560px) {	
+    #our-services .square{
+		padding: 0px;
+		background-size: 150px;
+		background-repeat: no-repeat;
+		background-position-y: 0;
+		background-color: rgba(50, 50, 50, 1);
+		box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+	}
+
+	
+	
+}
+

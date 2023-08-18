@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Gallery</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/6bed7a8d31.js" crossorigin="anonymous"></script>
+    <script src="js/script-gallery.js"></script>
+</head>
+<body>
+        <header>
+            <div class="container">           
+                <a href="index.html"><img src="../images/logo.png" class="logo"></a>
+                <nav>
+                    <ul>
+                        <a href="index.html"><li class="list"><i class="fa-solid fa-house" style="color: #e66000;"></i>Home</li></a>
+                        <a href="index.html#we-are"><li class="list"><i class="fa-solid fa-user" style="color: #e66000;"></i>About us</li></a>
+                        <a href="services.html"><li class="list"><i class="fa-solid fa-screwdriver-wrench" style="color: #e66000;"></i>Services</li></a>
+                        <a href="contact.html"><li class="list"><i class="fa-solid fa-address-book" style="color: #e66000;"></i>Contact</li></a>
+                    </ul>                  
+                </nav>
+            </div>
+        </header>
+        <section id="gallery">
+            <h1>Gallery</h1>
+                <div class="categories">
+                    <ul>
+                        <li class="filter-item active" data-filter="all">All</li>
+                        <li class="filter-item" data-filter="painting">Painting</li>
+                        <li class="filter-item" data-filter="carpentry">Carpentry</li>
+                        <li class="filter-item" data-filter="floors">Floors/Walls</li>
+                        <li class="filter-item" data-filter="renovation">Renovation</li>
+                    </ul>
+                </div>
+                <div class="gallery-images">
+                    <div class="gallery-card painting"> 
+                        <img src="images/gallery/image1.jpeg" alt="">
+                        <div class="overlay"></div>
+                        <div class="card-info">
+                            <p>Work done</p>
+                        </div>
+                    </div>
+                    <div class="gallery-card carpentry"> 
+                        <img src="images/gallery/image2.jpeg" alt="">
+                        <div class="overlay"></div>
+                        <div class="card-info">
+                            <p>Work done</p>
+                        </div>
+                    </div>
+                    <div class="gallery-card floors"> 
+                        <img src="images/gallery/image3.jpeg" alt="">
+                        <div class="overlay"></div>
+                        <div class="card-info">
+                            <p>Work done</p>
+                        </div>
+                    </div>
+                    <div class="gallery-card renovation"> 
+                        <img src="images/gallery/image4.jpeg" alt="">
+                        <div class="overlay"></div>
+                        <div class="card-info">
+                            <p>Work done</p>
+                        </div>
+                    </div>
+                </div>
+            
+        </section>
+        <section id="media">
+            <div class="container">
+                <img src="images/facebook.svg">
+                <img src="images/instagram.svg">
+                <h3>Follow us!</h3>
+            </div>
+        </section>
+        <section id="bottom">
+            <div class="bottom-page">
+                <h1>We're here to serve you!</h1>
+                <button><a href="tel:+013658806763">CALL US</a></button>
+            </div>
+        </section>
+     <footer>
+             <div class="container">
+             <p>&copy;Best Way Construction - 2023.</p>
+             </div>
+     </footer>
+     
+</body>
+
+</html>
